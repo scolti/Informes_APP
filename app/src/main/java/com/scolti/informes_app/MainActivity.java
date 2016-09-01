@@ -1,5 +1,6 @@
 package com.scolti.informes_app;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
@@ -28,6 +29,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
@@ -191,7 +193,7 @@ public class MainActivity extends AppCompatActivity
 
         Document doc = new Document();
 
-        String outPath = Environment.getExternalStorageDirectory() + "/informe.pdf";
+        final String outPath = Environment.getExternalStorageDirectory() + "/informe.pdf";
         try {
             PdfWriter.getInstance(doc, new FileOutputStream(outPath));
             doc.open();
@@ -225,6 +227,25 @@ public class MainActivity extends AppCompatActivity
         }
 
        //Toast.makeText(getBaseContext(), "El PDF se ha generado con éxito :)", Toast.LENGTH_LONG).show();
-        Snackbar.make(view, "El PDF se ha generado con éxito :)", Snackbar.LENGTH_LONG).show();
+        Snackbar.make(view, "El PDF se ha generado con éxito :)", Snackbar.LENGTH_LONG).setActionTextColor(getResources()
+                .getColor(R.color.snackbar_action)).setAction("VER",new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                //Acciones que ocurren al pulsar sobre "VER"
+                File file = new File (outPath);
+                if(file.exists()){
+                    Uri path = Uri.fromFile(file);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setDataAndType(path,"application/pdf");
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    try{
+                        startActivity(intent);
+                    }
+                    catch (ActivityNotFoundException e){
+                        Toast.makeText(getBaseContext(),"No pudo abrirse el archivo PDF", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        }).show();
     }
 }
