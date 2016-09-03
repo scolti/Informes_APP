@@ -3,24 +3,24 @@
     <!--Iconos y opciones del menu desplegable-->
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:src="@mipmap/ic_home"
+            android:id="@+id/nav_inicio"
+            android:src="@mipmap/ic_inicio"
             android:title="@string/inicio" />
         <item
-            android:id="@+id/nav_folder"
-            android:icon="@mipmap/ic_folder"
+            android:id="@+id/nav_trabajos"
+            android:icon="@mipmap/ic_trabajos"
             android:title="@string/trabajos" />
         <item
-            android:id="@+id/nav_friends"
-            android:icon="@mipmap/ic_friends"
+            android:id="@+id/nav_amigos"
+            android:icon="@mipmap/ic_amigos"
             android:title="@string/amigos" />
         <item
-            android:id="@+id/nav_location"
-            android:icon="@mipmap/ic_location"
+            android:id="@+id/nav_ubicaciones"
+            android:icon="@mipmap/ic_ubicaciones"
             android:title="@string/ubicaciones" />
         <item
-            android:id="@+id/nav_document"
-            android:icon="@mipmap/ic_document"
+            android:id="@+id/nav_informes"
+            android:icon="@mipmap/ic_informes"
             android:title="@string/informes" />
     </group>
 
