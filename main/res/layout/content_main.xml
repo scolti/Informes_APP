@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.scolti.informes_app.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_titulo"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/realizador"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_realizador"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/escenario"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_escenario"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/localizacion"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_localizacion"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pag_guion"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_pag_guion"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secuencias"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_secuencias"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permisos"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="230sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_permisos"
+                    android:hint="@string/hint"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_img"
+                    android:id="@+id/btn_img"
+                    android:layout_column="0"/>
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/ImgView"
+                    android:layout_column="2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12sp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generar_pdf"
+                    android:id="@+id/btn_generar"
+                    android:background="@color/colorAccent"
+                    android:onClick="createPDF" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

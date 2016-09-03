@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Iconos y opciones del menu desplegable-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:src="@mipmap/ic_incio"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_trabajo"
+            android:icon="@mipmap/ic_trabajo"
+            android:title="@string/trabajos" />
+        <item
+            android:id="@+id/nav_amigos"
+            android:icon="@mipmap/ic_amigos"
+            android:title="@string/amigos" />
+        <item
+            android:id="@+id/nav_ubicacion"
+            android:icon="@mipmap/ic_ubicacion"
+            android:title="@string/ubicaciones" />
+        <item
+            android:id="@+id/nav_documento"
+            android:icon="@mipmap/ic_documento"
+            android:title="@string/informes" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

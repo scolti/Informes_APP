@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Informes</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="inicio">Inicio</string>
+    <string name="trabajos">Trabajos</string>
+    <string name="amigos">Amigos</string>
+    <string name="ubicaciones">Ubicaciones</string>
+    <string name="informes">Modelos Informes</string>
+    <string name="titulo">Título</string>
+    <string name="realizador">Realizador</string>
+    <string name="escenario">Escenario</string>
+    <string name="localizacion">Localización</string>
+    <string name="pag_guion">Pag Guión</string>
+    <string name="secuencias">Secuencias</string>
+    <string name="permisos">Permisos</string>
+    <string name="generar_pdf">Generar PDF</string>
+    <string name="toast">El PDF se ha generado con éxito :)</string>
+    <string name="snackbar">El PDF se ha generado con éxito :)</string>
+    <string name="hint">Pulsa para escribir</string>
+    <string name="hint_titulo">Título del proyecto</string>
+    <string name="hint_realizador">Nombre del realizador</string>
+    <string name="hint_escenario">Descripcion del escenario</string>
+    <string name="hint_localizacion">Descripcion de la localizacion</string>
+    <string name="hint_pag_guion">bla bla bla</string>
+    <string name="hint_secuencias">Descripcion de las secuencias</string>
+    <string name="hint_permisos">Descripcion de los permisos concedidos</string>
+    <string name="imagenes">Imágenes</string>
+    <string name="btn_img">Subir imagen</string>
+</resources>
